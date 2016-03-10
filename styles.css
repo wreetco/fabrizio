@@ -1,0 +1,26 @@
+nav {
+	background: #fff !important;
+}
+
+nav li a {
+	color: #000 !important;
+	font-size: 1.25em !important;
+	//font-weight: bold;
+}
+
+.splash {
+	height: 65vh;
+	max-height: 1000px;
+	background-image: url('https://wreet.co/assets/denver.jpg');
+	background-size: cover;
+}
+
+.splash div {
+	height: 100%;
+	background-color: rgba(20, 20, 20, .5);
+	z-index: 99;
+}
+
+.debug {
+	border: 1px solid red;
+}
