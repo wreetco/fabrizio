@@ -2,47 +2,240 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>wreet.co</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>wreetco - hell is closer than you might think</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-          
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- enquire -->
+  <script type="text/javascript" src="enquire.min.js"></script>
+  <!-- em pix tool -->
+  <script type="text/javascript" src="getEmPixels.min.js"></script>
 </head>
-<body>
-  
-  <nav>
-    <div class="nav-wrapper container">
-      <a href="#!" class="brand-logo">
-        <img src="https://wreet.co/assets/wreetco_icon_alt.png" alt="wlogo" width="52" style="position: relative; top: 5px;">
-      </a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">services</a></li>
-        <li><a href="badges.html">work</a></li>
-        <li><a href="collapsible.html">contact</a></li>
-        <li><a href="mobile.html">blog</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">services</a></li>
-        <li><a href="badges.html">work</a></li>
-        <li><a href="collapsible.html">contact</a></li>
-        <li><a href="mobile.html">blog</a></li>
-      </ul>
-    </div>
-  </nav>
-  
+<body class="grey darken-4">
+  <div class="navbar-fixed">
+    <nav class="grey darken-4">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">
+          <img src="https://wreet.co/assets/wreetco_icon_alt.png" alt="wlogo">
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" id="burger">menu</i></a>
+        <span class="wreetbro">wreetco</span>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">services</a></li>
+          <li><a href="badges.html">work</a></li>
+          <li><a href="collapsible.html">contact</a></li>
+          <li><a href="mobile.html">blog</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">services</a></li>
+          <li><a href="badges.html">work</a></li>
+          <li><a href="collapsible.html">contact</a></li>
+          <li><a href="mobile.html">blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div><!-- end nav wrapper -->
   
   <div class="row splash">
-    <div class="col s12">
-      hello world
+    <div class="col s12 valign-wrapper">
+      <div class="splash-content valign">
+        <h2 class="center-align">secure, reliable software</h2>
+        <span>we specialize in the entire application lifecycle - from design to deployment</span> 
+      </div>
+    </div>
+  </div>
+  <!-- end splash -->
+  <div class="row container services-overview center-align">
+    <div class="col s12 m6">
+      <img class="svg-image" src="cloud.svg">
+    </div>
+    
+    <div class="col m6 s12 left-align">
+      <h4>software development</h4>
+      <ul class="biggie-list">
+        <li>mobile applications</li>
+        <li>API development</li>
+        <li>web sites/apps</li>
+        <li>embedded applications</li>
+        <li>high-availability services</li>
+      </ul>
     </div>
   </div>
   
+  <div class="grey darken-3 white-text service-section center-align">
+    <div class="container row">
+      <div class="col m5 offset-m1 s12 left-align">
+        <h4>information security</h4>
+        <ul class="biggie-list">
+          <li>software audits</li>
+          <li>penetration testing</li>
+          <li>exploit research</li>
+          <li>application security</li>
+          <li>fabrizio</li>
+        </ul>
+      </div>
+      
+      <div class="col m6 s12">
+        <img class="svg-image" src="security.svg">
+      </div>
+    </div><!-- end cointainer row valign... -->
+  </div>
+  
+  <div class="row container services-overview service-section center-align">
+    <div class="col m6 s12">
+      <img class="svg-image" src="infrastructure.svg">
+    </div>
+    
+    <div class="col m6 left-align">
+      <h4>infrastructure</h4>
+      <ul class="biggie-list">
+        <li>firewall & ids/ips</li>
+        <li>server deployment</li>
+        <li>network setup</li>
+        <li>switch/host management</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="grey darken-1 white-text service-section nogut">
+    <div class="container row">
+      <div class="col s12 projects">
+        
+        <div class="carousel">
+        <a class="carousel-item" href="#two!">
+          <img src="/img/mean_wreed.png">
+          MEAN wreed
+        </a>
+        <a class="carousel-item" href="#one!">
+          <img src="/img/quik_auto.png">
+          Quik Auto Sales
+        </a>
+        <a class="carousel-item" href="#three!">
+          <img src="/img/msudclub.png">
+          MSU Computer Club
+        </a>
+        <a class="carousel-item" href="#four!">
+          <img src="/img/front_range.png">
+          Front Range IT
+        </a>
+        <a class="carousel-item" href="#five!">
+          <img src="/img/sydo.png">
+          SYDO
+        </a>
+        </div> 
+          
+      </div>
+    </div><!-- end cointainer row valign... -->
+  </div>
   
   
+  <div class="white-text grey darken-4 service-section map" id="map-canvas" style="position: absolute; width: 100%; padding-bottom: 0em;">
+    &nbsp;
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
   
-  
+  <div class="row">
+    <div class="cform white-text col s12 m6">
+      <h4 class="nogut">contact</h3>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate">
+          <label for="name">name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="text" class="validate">
+          <label for="name">email</label>
+        </div>
+      </div>
+      <div class="row valign-wrapper">
+        <div class="input-field col s9">
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="message">message</label>
+        </div>
+        <div class="col s3 valign valign-wrapper">
+          <div class="center-align" style="margin:0 auto;">
+            <i class="material-icons teal-text" style="font-size:4em;">send</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- make it material.org -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <!-- make the navbar do fancy stuff -->
+  <script>
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 75) {
+        $('nav').addClass('shrinkdat');
+        $('#burger').addClass('shrinkdat');
+      } else {
+        $('nav').removeClass('shrinkdat');
+        $('#burger').removeClass('shrinkdat');
+      }
+    });
+   
+		// init the map
+		var mapCanvas = document.getElementById('map-canvas');
+		var mapOptions = {
+  		center: new google.maps.LatLng(39.736219, -105.00120900000002),
+  		zoom: 12,
+  		draggable: false,
+  		scrollwheel: false,
+  		scalaControl: false,
+  		disableDefaultUI: true,
+  		mapTypeId: google.maps.MapTypeId.ROADMAP,
+  		styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [ { "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 } ] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [ { "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 } ] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [ { "color": "#000000" }, { "lightness": 20 } ] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [ { "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 } ] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [ { "color": "#000000" }, { "lightness": 20 } ] }, { "featureType": "poi", "elementType": "geometry", "stylers": [ { "color": "#000000" }, { "lightness": 21 } ] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [ { "color": "#000000" }, { "lightness": 17 } ] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [ { "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "color": "#000000" }, { "lightness": 18 } ] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [ { "color": "#000000" }, { "lightness": 16 } ] }, { "featureType": "transit", "elementType": "geometry", "stylers": [ { "color": "#000000" }, { "lightness": 19 } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "color": "#000000" }, { "lightness": 17 } ] } ]
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+			var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(39.736219, -105.00120900000002),
+			map: map,
+			title: 'wreetco'
+  	});
+  	google.maps.event.addListenerOnce(map, 'idle', function(){
+      
+    });
+    
+    // onload for everyone
+    $(document).ready(function() {
+      // mobile menu
+      $(".button-collapse").sideNav();
+      // carousel 
+      $('.carousel').carousel({
+        //full_width: true 
+      });
+      // map
+      document.getElementById('map-canvas').style.minHeight = $('.cform').height() + (getEmPixels() * 2) + "px";
+    });
+  	// enquire stuff for this page
+  	// largest breakpoint in materialize "desktop"
+  	enquire.register("only screen and (min-width: 992px)", {
+  	  match: function(){
+
+  	  } // end match
+    });
+    // medium breakpoint "tablet"
+    enquire.register("only screen and (max-width: 991px) and (min-width: 601px)", {
+      match: function(){
+      } // end match
+    });
+    // small breakpoiint, "phone"
+    enquire.register("only screen and (max-width: 600px)", {
+      match: function(){
+        // if we are tiny, cform needs no margin
+        $('.cform').css("cssText", "margin: 0 !important;");
+        // if we are tiny, the splash should be a little taller 
+        $(".splash").height($(".splash").height() * 1.25);
+        $(".splash h2").css("font-size", "2.25em");
+
+      } // end match
+    });
+  </script>
 </body>
 </html>
